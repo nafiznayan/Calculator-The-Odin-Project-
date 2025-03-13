@@ -99,7 +99,7 @@ function calculateResult() {
       result = currentValue !== 0 ? previousValue / currentValue : "Error";
       break;
     case "%":
-      result = previousValue % currentValue;
+      result = (previousValue * currentValue) / 100;
       break;
   }
 
